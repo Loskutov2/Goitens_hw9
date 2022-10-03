@@ -91,6 +91,23 @@ color:var(--primary-text-color);
 .contact-link{
     color: var(--secondary-text-color);
 }
+.contact-link.mail::before{
+    width: 20px;
+    height: 14px;
+    background-image: url(/images/envelope.svg);
+}
+.contact-link.tel::before{
+    width: 13px;
+    height: 20px;
+    background-image: url(/images/smartphone.svg);
+}
+.contact-link::before{
+    content: "";
+    display: inline-flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
 .contacts-list{
     display: flex;
     margin-left: auto;
